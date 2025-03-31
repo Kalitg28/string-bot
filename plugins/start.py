@@ -33,7 +33,9 @@ async def get_fsub(bot, message):
         except Exception:
             channel_link = "https://telegram.me/Techifybots"
 
-        buttons.append([InlineKeyboardButton(f"🔔 Join {chat.title}", url=channel_link)])
+        buttons.append([InlineKeyboardButton(f"🍿 Join Update Channel 🍿", url=channel_link),
+                       InlineKeyboardButton("🍀 Check Again 🍀", callback_data="chk")
+                       ])
 
     await message.reply(
         f"👋 Hello {message.from_user.mention()}, Welcome!\n\n"
