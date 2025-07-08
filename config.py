@@ -1,9 +1,9 @@
 from os import environ
 
-API_ID = int(environ.get("API_ID", "27823209"))
-API_HASH = environ.get("API_HASH", "1d693fcf3bfea119ca1d9057b08a4495")
+API_ID = int(environ.get("API_ID", ""))
+API_HASH = environ.get("API_HASH", "")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-OWNER_ID = int(environ.get("OWNER_ID", "6004928770"))
+OWNER_ID = int(environ.get("OWNER_ID", ""))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002541046049"))
 MONGO_DB_URI = environ.get("MONGO_DB_URI", "")
 PORT = int(environ.get('PORT', 8080))
